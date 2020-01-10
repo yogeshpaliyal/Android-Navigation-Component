@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_basic"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        tools:layout="@layout/fragment_main"
+        android:name="com.techpaliyal.androidnavigationcomponent.MainFragment">
+        <action android:id="@+id/startBasicFragment"
+            app:destination="@id/basicFragment">
+
+        </action>
+
+        <action android:id="@+id/startArgumentedFragment"
+            app:destination="@id/argumentedFragment">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/basicFragment"
+        tools:layout="@layout/fragment_basic"
+        android:name="com.techpaliyal.androidnavigationcomponent.BasicFragment"/>
+
+    <fragment
+        android:id="@+id/argumentedFragment"
+        tools:layout="@layout/fragment_argumented"
+        android:name="com.techpaliyal.androidnavigationcomponent.ArgumentedFragment">
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+    </fragment>
+
+
+
+
+</navigation>

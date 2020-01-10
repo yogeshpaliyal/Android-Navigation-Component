@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBasic"
+        android:text="Basic Navigation"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnArgumented"
+        android:text="Argumented Navigation"/>
+
+
+</LinearLayout>
+</layout>
